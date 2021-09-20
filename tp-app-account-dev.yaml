@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: account-app
+
+keycloak:
+  issuer-uri: ${KEYCLOAK_URL_AUTH}/auth/realms/
+database:
+  url: ${TP_ACCOUNT_MONGODB_URI}
+  name: techsophy-platform
+
+user:
+  management:
+    keycloak-api: ${KEYCLOAK_URL_AUTH}/auth/admin/realms/
+    user-api: /users
+    roles-api: /roles
+    groups-api: /groups
+    count-api: /count
+
+default:
+  pagelimit: 5
+
+gateway:
+  uri: ${GATEWAY_URI}
+
+springdoc:
+  version: '@springdoc.version@'
+  api-docs:
+    path: /accounts/v3/api-docs

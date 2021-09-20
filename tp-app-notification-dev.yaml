@@ -1,0 +1,76 @@
+spring:
+  application:
+    name: tp-app-notification
+  servlet:
+    multipart:
+      max-file-size: 15MB
+      max-request-size: 15MB
+server:
+  http2:
+    enabled: true
+
+graphql:
+  servlet:
+    maxQueryDepth: 100
+    exception-handlers-enabled: false
+    mapping: /notification/v1/graphql
+  playground:
+    enabled: true
+
+voyager:
+  enabled: true
+
+notification:
+  aws:
+    region: ${AWS_REGION}
+    access-key: ${AWS_ACCESS_KEY}
+    access-secret: ${AWS_ACCESS_SECRET}
+  db:
+    provider:
+      mongodb:
+        enabled: ${DB_MONGO_ENABLED:true}
+      memory:
+        enabled: ${DB_MEMORY_ENABLED:false}
+  sms:
+    enabled: ${SMS_ENABLED:false}
+    provider:
+      twilio: ${SMS_PROVIDER_TWILIO:false}
+      aws: ${SMS_PROVIDER_AWS:true}
+  email:
+    enabled: ${EMAIL_ENABLED:true}
+    provider:
+      sendMail: true
+      sendGrid: ${EMAIL_PROVIDER_SENDGRID:false}
+      awsSES: false
+  firebase:
+    enabled: ${FIREBASE_ENABLED:false}
+    app: ${FIREBASE_APP}
+  smtp:
+    host: smtp.gmail.com
+    port: 587
+    user: noreply.tsf@gmail.com
+    password: Strong123
+    debug: false
+
+
+
+elasticsearch:
+  enabled: ${ELASTIC_SEARCH_ENABLED:false}
+  host: ${ELASTIC_SEARCH_HOST}
+
+database:
+  url: ${tp_modeler_app_mongoUri}
+  name: techsophy-platform
+
+gateway:
+  uri: ${GATEWAY_URI}
+
+keycloak:
+  issuer-uri: ${KEYCLOAK_URL_AUTH}/auth/realms/
+
+
+
+
+
+
+

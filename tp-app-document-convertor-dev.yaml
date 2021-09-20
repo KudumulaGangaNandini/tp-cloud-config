@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: tp-app-document
+  freemarker:
+    suffix: .ftl
+  servlet:
+    multipart:
+      max-file-size: 15MB
+      max-request-size: 15MB
+logging:
+  level:
+    '[org.springframework.web]':  INFO
+  logback:
+    rollingpolicy:
+      max-file-size: 30MB
+gateway:
+  uri: ${GATEWAY_URI}
+keycloak:
+  issuer-uri: ${KEYCLOAK_URL_AUTH}/auth/realms/
+
+springdoc:
+  version: '@springdoc.version@'
+  api-docs:
+    path: /document-converter/v3/api-docs

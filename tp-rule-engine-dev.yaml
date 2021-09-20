@@ -1,0 +1,12 @@
+gateway:
+  uri:   ${GATEWAY_URI}
+keycloak:
+  issuer-uri:  ${KEYCLOAK_URL_AUTH}/auth/realms/
+database:
+  url: ${tp_modeler_app_mongoUri}
+  name: techsophy-platform
+
+springdoc:
+  version: '@springdoc.version@'
+  api-docs:
+    path: /rules/v3/api-docs
