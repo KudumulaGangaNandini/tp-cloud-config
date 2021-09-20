@@ -1,0 +1,18 @@
+security:
+  oauth2:
+    resourceserver:
+      jwt:
+        issuer-uri: ${KEYCLOAK_URL_AUTH}/auth/realms/${KEYCLOAK_REALM_NAME}
+
+gateway:
+  uri: ${GATEWAY_URI}
+keycloak:
+  issuer-uri:  ${KEYCLOAK_URL_AUTH}/auth/realms/
+database:
+  url:   ${TP_FORM_RUNTIME_MONGODB}
+  name: techsophy-platform
+
+springdoc:
+  version: '@springdoc.version@'
+  api-docs:
+    path: /form-runtime/v3/api-docs

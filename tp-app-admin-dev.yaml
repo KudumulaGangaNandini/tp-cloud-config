@@ -1,0 +1,30 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 256MB
+      max-request-size: 256MB
+      enabled: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${KEYCLOAK_URL_AUTH}/auth/realms/${KEYCLOAK_REALM_NAME}
+user:
+  management:
+
+    token-api: ${KEYCLOAK_URL_AUTH}/auth/realms/master/protocol/openid-connect/token
+    realm-api: ${KEYCLOAK_URL_AUTH}/auth/admin/realms
+    client_id: ${CLIENT_ID}
+    username: ${USERNAME}
+    password: ${PASSWORD}
+database:
+  url:  ${TP_ADMIN_MONGODB_URI}
+  name: tp_admin
+default:
+  pagelimit: 5
+
+springdoc:
+  version: '@springdoc.version@'
+  api-docs:
+    path: /admin/v3/api-docs
+
