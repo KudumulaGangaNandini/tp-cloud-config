@@ -1,0 +1,23 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${KEYCLOAK_URL_AUTH}/auth/realms/${KEYCLOAK_REALM_NAME}
+
+
+gateway:
+  uri: ${GATEWAY_URI}
+
+camunda-engine.servlet.context-path : ${CAMUNDA_ENGINE_CONTEXT_PATH}
+
+springfox:
+  documentation:
+    swaggerUi:
+      baseUrl: /workflow/v1
+    openApi:
+      v3:
+        path: /workflow/v1/openapi/v3/api-docs
+    swagger:
+      v2:
+        path: /workflow/v1/swagger/v2/api-docs
