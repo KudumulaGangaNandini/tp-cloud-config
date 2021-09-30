@@ -5,7 +5,7 @@ spring:
 keycloak:
   issuer-uri: ${KEYCLOAK_URL_AUTH}/auth/realms/
 database:
-  url: ${TP_ACCOUNT_MONGODB_URI}
+  url: ${TP_MODELER_APP_MONGO_URI}
   name: techsophy-platform
 
 user:

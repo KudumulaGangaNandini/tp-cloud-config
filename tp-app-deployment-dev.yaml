@@ -9,7 +9,7 @@ keycloak:
 
 
 database:
-  url: ${tp_modeler_app_mongoUri}
+  url: ${TP_MODELER_APP_MONGO_URI}
   name: techsophy-platform
 
 gateway:

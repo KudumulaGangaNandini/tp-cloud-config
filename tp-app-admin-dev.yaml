@@ -18,8 +18,8 @@ user:
     username: ${USERNAME}
     password: ${PASSWORD}
 database:
-  url:  ${TP_ADMIN_MONGODB_URI}
-  name: tp_admin
+  url:  ${TP_MODELER_APP_MONGO_URI}
+  name: techsophy-platform
 default:
   pagelimit: 5
 
