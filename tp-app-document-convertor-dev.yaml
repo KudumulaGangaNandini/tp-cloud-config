@@ -1,6 +1,6 @@
 spring:
   application:
-    name: tp-app-document
+    name: tp-app-document-converter
   freemarker:
     suffix: .ftl
   servlet:
