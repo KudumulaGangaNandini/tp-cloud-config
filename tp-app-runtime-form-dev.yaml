@@ -7,7 +7,7 @@ security:
 gateway:
   uri: ${GATEWAY_URI}
 keycloak:
-  issuer-uri:  ${KEYCLOAK_URL_AUTH}/auth/realms/
+  issuer-uri: ${KEYCLOAK_URL_AUTH}/auth/realms/
 database:
   url: ${TP_MODELER_APP_MONGO_URI}
   name: techsophy-platform
