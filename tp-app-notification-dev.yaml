@@ -52,9 +52,9 @@ notification:
     password: Strong123
     debug: false
   templates:
-    enabled: true
+    enabled: ${TEMPLATES_ENABLED}
   dms:
-    enabled: true
+    enabled: ${DMS_ENABLED}
 
 
 
