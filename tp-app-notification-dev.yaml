@@ -46,11 +46,15 @@ notification:
     enabled: ${FIREBASE_ENABLED:false}
     app: ${FIREBASE_APP}
   smtp:
-    host: smtp.gmail.com
-    port: 587
-    user: noreply.tsf@gmail.com
-    password: Strong123
+    host: ${SMTP_HOST}
+    port: ${SMTP_PORT}
+    user: ${SMTP_USER}
+    password: ${SMTP_PASSWORD}
     debug: false
+  templates:
+    enabled: ${TEMPLATES_ENABLED}
+  dms:
+    enabled: ${DMS_ENABLED}
 
 
 
