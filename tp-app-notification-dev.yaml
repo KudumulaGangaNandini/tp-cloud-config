@@ -51,6 +51,10 @@ notification:
     user: noreply.tsf@gmail.com
     password: Strong123
     debug: false
+  templates:
+    enabled: true
+  dms:
+    enabled: true
 
 
 
