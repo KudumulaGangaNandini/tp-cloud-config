@@ -7,7 +7,7 @@ springdoc:
 gateway:
   uri: ${GATEWAY_URI}
 keycloak:
-  issuer-uri: https://keycloak-tsplatform.techsophy.com/auth/realms/
+  issuer-uri: ${KEYCLOAK_URL_AUTH}/auth/realms/
 database:
   url: ${TP_MODELER_APP_MONGO_URI}
   name: techsophy-platform
