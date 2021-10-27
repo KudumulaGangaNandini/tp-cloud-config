@@ -21,6 +21,9 @@ database:
 gateway:
   uri: ${GATEWAY_URI}
 
-
+springdoc:
+  version: '@springdoc.version@'
+  api-docs:
+    path: /dms/v3/api-docs
 
 
