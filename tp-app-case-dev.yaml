@@ -11,3 +11,6 @@ springdoc:
   version: '@springdoc.version@'
   api-docs:
     path: /case-modeler/v3/api-docs
+
+default:
+  pagelimit: 20
