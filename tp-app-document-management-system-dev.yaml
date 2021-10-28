@@ -26,4 +26,5 @@ springdoc:
   api-docs:
     path: /dms/v3/api-docs
 
-
+default:
+  pagelimit: 5
