@@ -17,3 +17,6 @@ opentracing:
     cloud:
       log:
         enabled: true
+
+default:
+  pagelimit: 20
