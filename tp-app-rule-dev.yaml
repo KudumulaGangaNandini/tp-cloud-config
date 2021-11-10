@@ -1,4 +1,3 @@
-
 gateway:
   uri: ${GATEWAY_URI}
 keycloak:
@@ -11,3 +10,6 @@ springdoc:
   version: '@springdoc.version@'
   api-docs:
     path: /rule-modeler/v3/api-docs
+
+default:
+  pagelimit: 20
