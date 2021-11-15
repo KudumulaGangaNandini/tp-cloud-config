@@ -156,6 +156,12 @@ spring:
             - Path=/api/config-server/**
           filters:
             - StripPrefix=1
+        - id: checklist-modeler
+          uri: http://checklist-app:8080
+          predicates:
+            - Path=/api/checklist-modeler/**
+          filters:
+            - StripPrefix=1
 
 
   security:
