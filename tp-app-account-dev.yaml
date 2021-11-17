@@ -26,3 +26,12 @@ springdoc:
   version: '@springdoc.version@'
   api-docs:
     path: /accounts/v3/api-docs
+
+otp:
+  validity: 120
+
+notification:
+  query: "mutation SEND_EMAIL($mailMessage: MailMessage!) {\n  sendMail(input: $mailMessage)\n}\n"
+  from: "noreply.tsf@gmail.com"
+  api: https://api-gateway.techsophy.com/api/notification/v1/graphql
+
