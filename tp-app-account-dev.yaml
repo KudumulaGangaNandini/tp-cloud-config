@@ -33,5 +33,4 @@ otp:
 notification:
   query: "mutation SEND_EMAIL($mailMessage: MailMessage!) {\n  sendMail(input: $mailMessage)\n}\n"
   from: "noreply.tsf@gmail.com"
-  api: https://api-gateway.techsophy.com/api/notification/v1/graphql
 
