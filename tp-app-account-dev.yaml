@@ -31,6 +31,11 @@ otp:
   validity: 120
 
 notification:
-  query: "mutation SEND_EMAIL($mailMessage: MailMessage!) {\n  sendMail(input: $mailMessage)\n}\n"
-  from: "noreply.tsf@gmail.com"
+  enabled: true
+  email:
+    query: "mutation SEND_EMAIL($mailMessage: MailMessage!) {\n  sendMail(input: $mailMessage)\n}\n"
+  sms:
+    query: "mutation SEND_SMS($smsMessage: smsMessage!) {\n  sendSMS(input: $smsMessage)\n}\n"
+
+
 
