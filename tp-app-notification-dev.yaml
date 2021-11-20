@@ -55,6 +55,11 @@ notification:
     enabled: ${TEMPLATES_ENABLED}
   dms:
     enabled: ${DMS_ENABLED}
+  twilio:
+    accountId: ${TWILIO_ACCOUNT_ID}
+    token: ${TWILIO_TOKEN}
+    msId: ${TWILIO_MSID}
+
 
 
 
