@@ -27,8 +27,10 @@ springdoc:
   api-docs:
     path: /accounts/v3/api-docs
 
+email:
+  validity: ${EMAIL_VALIDITY:86400}
 otp:
-  validity: 120
+  validity: ${OTP_VALIDITY:180}
 
 notification:
   enabled: true
