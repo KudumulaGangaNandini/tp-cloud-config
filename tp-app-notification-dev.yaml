@@ -39,9 +39,9 @@ notification:
   email:
     enabled: ${EMAIL_ENABLED:true}
     provider:
-      sendMail: true
+      sendMail: ${EMAIL_PROVIDER_SENDMAIL:true}
       sendGrid: ${EMAIL_PROVIDER_SENDGRID:false}
-      awsSES: false
+      awsSES: ${EMAIL_PROVIDER_AWS_SES:false}
   firebase:
     enabled: ${FIREBASE_ENABLED:false}
     app: ${FIREBASE_APP}
