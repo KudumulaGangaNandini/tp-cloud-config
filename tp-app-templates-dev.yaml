@@ -15,3 +15,6 @@ springdoc:
   version: '@springdoc.version@'
   api-docs:
     path: /template-modeler/v3/api-docs
+
+default:
+  pagelimit: 20
