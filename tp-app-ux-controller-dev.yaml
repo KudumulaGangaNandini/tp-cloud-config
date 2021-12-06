@@ -11,13 +11,6 @@ gateway:
 
 camunda-engine.servlet.context-path : ${CAMUNDA_ENGINE_CONTEXT_PATH}
 
-springfox:
-  documentation:
-    swaggerUi:
-      baseUrl: /workflow/v1
-    openApi:
-      v3:
-        path: /workflow/v1/openapi/v3/api-docs
-    swagger:
-      v2:
-        path: /workflow/v1/swagger/v2/api-docs
+springdoc:
+  api-docs:
+    path: workflow/v3/api-docs
