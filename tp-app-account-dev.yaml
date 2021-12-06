@@ -31,6 +31,13 @@ email:
   validity: ${EMAIL_VALIDITY:86400}
 otp:
   validity: ${OTP_VALIDITY:180}
+USER:
+  REGISTRATION:
+    FAILURE:
+      EMAIL:
+        TO: ${USER_REGISTRATION_FAILURE_EMAIL_TO}
+        SUBJECT: ${USER_REGISTRATION_FAILURE_EMAIL_SUBJECT}
+
 
 notification:
   enabled: true
