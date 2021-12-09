@@ -17,7 +17,7 @@ gateway:
 keycloak:
   issuer-uri: ${KEYCLOAK_URL_AUTH}/auth/realms/
 database:
-  url: ${TP_MODELER_APP_MONGO_URI}
+  url: mongodb://tp_modeler:T3ch%21%23%40%5E%26o%2A@mongo-0.mongo:27017,mongo-1.mongo:27017/techsophy-platform?authSource=admin
   name: techsophy-platform
 
 pci:
