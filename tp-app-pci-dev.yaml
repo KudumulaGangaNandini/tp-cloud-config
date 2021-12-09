@@ -23,6 +23,6 @@ database:
 pci:
   audit:
     mongo:
-      enabled: true
+      enabled: ${PCI_AUDIT_MONGO_ENABLED}
     file:
-      enabled: false
+      enabled: ${PCI_AUDIT_FILE_ENABLED}
