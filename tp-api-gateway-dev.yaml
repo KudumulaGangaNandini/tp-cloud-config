@@ -89,7 +89,7 @@ spring:
             - Path=/api/auth/**
           filters:
             - StripPrefix=1
-        - id: workflow-wrapper
+        - id: ux-controller-service
           uri: http://uxapp-controller:8080
           predicates:
             - Path=/api/workflow/**
