@@ -1,0 +1,26 @@
+keycloak:
+  issuer-uri: ${KEYCLOAK_URL_AUTH}/auth/realms/
+
+gateway:
+  uri: ${GATEWAY_URI}
+
+database:
+  url: ${TP_MODELER_APP_MONGO_URI}
+  name: techsophy-platform
+
+dbstorage: ${DB_STORAGE:false}
+
+paymentgateway:
+  razorpay:
+    url: ${RAZORPAY_URL}
+    keyid: ${RAZORPAY_KEY_ID}	
+    keysecret: ${RAZORPAY_KEY_SECRET}
+  paypal:
+  payby:
+
+springdoc:
+  api-docs:
+    path: /payment-gateway/v3/api-docs
+
+default:
+  pagelimit: 5
