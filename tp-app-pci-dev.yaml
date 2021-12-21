@@ -1,7 +1,9 @@
 beconnector:
   config:
     camunda:
-      baseUrl: ${GATEWAY_URI}/workflow/v1
+      baseUrl:
+          - ${GATEWAY_URI}/workflow/v1
+
 sxp:
   journeyTriggerBaseURL: ${SXP_JOURNEY_BASE_URL}
   contextEngineURL: ${CE_DYN_JOURNEY_URL}
@@ -26,3 +28,6 @@ pci:
       enabled: ${PCI_AUDIT_MONGO_ENABLED}
     file:
       enabled: ${PCI_AUDIT_FILE_ENABLED}
+
+default:
+  pagelimit: 5
