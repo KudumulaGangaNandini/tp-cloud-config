@@ -62,7 +62,7 @@ spring:
           filters:
             - RemoveRequestHeader=Cookie
             - StripPrefix=1
-        - id: dmn
+        - id: rule-engine-service
           uri: http://rules:8080
           predicates:
             - Path=/api/rules/**
