@@ -9,4 +9,4 @@ database:
 springdoc:
   version: '@springdoc.version@'
   api-docs:
-    path: /rule-engine/v3/api-docs
+    path: /rules/v3/api-docs
