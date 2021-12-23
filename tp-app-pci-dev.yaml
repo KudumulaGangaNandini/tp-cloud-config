@@ -12,6 +12,9 @@ springdoc:
   version: '@springdoc.version@'
   api-docs:
     path: /pci/v3/api-docs
+  swagger-ui:
+    urls:
+    url: https://api-gateway.techsophy.com/api
 
 
 gateway:
