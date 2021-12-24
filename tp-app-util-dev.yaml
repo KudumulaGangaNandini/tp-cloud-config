@@ -7,3 +7,7 @@ gateway:
 springdoc:
   api-docs:
     path: /util/v3/api-docs
+
+database:
+  url: ${TP_MODELER_APP_MONGO_URI}
+  name: techsophy-platform
