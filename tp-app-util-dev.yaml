@@ -1,0 +1,9 @@
+keycloak:
+  issuer-uri: ${KEYCLOAK_URL_AUTH}/auth/realms/
+
+gateway:
+  uri: ${GATEWAY_URI}
+
+springdoc:
+  api-docs:
+    path: /util/v3/api-docs
