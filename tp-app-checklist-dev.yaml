@@ -7,6 +7,11 @@ springdoc:
 
 gateway:
   uri: ${GATEWAY_URI}
+
 database:
   url: ${TP_MODELER_APP_MONGO_URI}
-  name: CheclistDB
+  name: techsophy-platform
+  
+default:
+  pagelimit: ${DEFAULT_PAGE_SIZE}
+
