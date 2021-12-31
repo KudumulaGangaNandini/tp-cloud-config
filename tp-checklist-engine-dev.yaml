@@ -3,7 +3,7 @@ keycloak:
 springdoc:
   version: '@springdoc.version@'
   api-docs:
-    path: checklist-engine/v3/api-docs
+    path: /checklist-engine/v3/api-docs
 gateway:
   uri: ${GATEWAY_URI}
 database:
