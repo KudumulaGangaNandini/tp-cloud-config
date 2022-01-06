@@ -3,6 +3,11 @@ spring:
     multipart:
       max-file-size: 15MB
       max-request-size: 15MB
+  kafka:
+    producer:
+      bootstrap-servers: ${KAFKA_SERVER_URL}
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
 
 dms:
   s3:
@@ -10,6 +15,7 @@ dms:
     accessKey: ${AWS_ACCESS_KEY}
     secretKey: ${AWS_SECRET_KEY}
     region: ${AWS_REGION}
+
 
 keycloak:
   issuer-uri: ${KEYCLOAK_URL_AUTH}/auth/realms/
@@ -21,10 +27,28 @@ database:
 gateway:
   uri: ${GATEWAY_URI}
 
+
+default:
+  pagelimit: 5
+
+
 springdoc:
   version: '@springdoc.version@'
   api-docs:
     path: /dms/v3/api-docs
 
-default:
-  pagelimit: 5
+
+
+elasticsearch:
+  uri: ${ELASTIC_SEARCH_URL}
+  enable: false
+
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
