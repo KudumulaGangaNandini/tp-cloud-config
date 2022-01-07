@@ -40,7 +40,7 @@ springdoc:
 
 
 elasticsearch:
-  uri: ${ELASTIC_SEARCH_URL}
+  uri: http://localhost:8080
   enable: false
 
 
