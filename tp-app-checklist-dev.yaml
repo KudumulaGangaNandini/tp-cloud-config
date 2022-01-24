@@ -13,5 +13,5 @@ database:
   name: techsophy-platform
   
 default:
-  pagelimit: ${DEFAULT_PAGE_SIZE}
+  pagelimit: 20
 
