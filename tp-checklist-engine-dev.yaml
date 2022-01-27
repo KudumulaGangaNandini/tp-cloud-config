@@ -9,3 +9,11 @@ gateway:
 database:
   url: ${TP_MODELER_APP_MONGO_URI}
   name: techsophy-platform
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
