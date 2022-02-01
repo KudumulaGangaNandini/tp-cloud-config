@@ -25,6 +25,11 @@ notification:
     region: ${AWS_REGION}
     access-key: ${AWS_ACCESS_KEY}
     access-secret: ${AWS_ACCESS_SECRET}
+  sns:
+    access-key: ${SNS_ACCESS_KEY}
+    secret-key: ${SNS_SECRET_KEY}
+    region: ${SNS_REGION}
+    arn: ${SNS_TOPIC_ARN}
   db:
     provider:
       mongodb:
@@ -32,7 +37,7 @@ notification:
       memory:
         enabled: ${DB_MEMORY_ENABLED:false}
   sms:
-    enabled: ${SMS_ENABLED:false}
+    enabled: ${SMS_ENABLED:true}
     provider:
       twilio: ${SMS_PROVIDER_TWILIO:false}
       aws: ${SMS_PROVIDER_AWS:true}
