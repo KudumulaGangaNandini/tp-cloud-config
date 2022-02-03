@@ -19,7 +19,6 @@ gateway:
   uri: ${GATEWAY_URI}
 database:
   url: ${TP_MODELER_APP_MONGO_URI}
-  name: SchedulerDB
 
 default:
   pagelimit: 20
