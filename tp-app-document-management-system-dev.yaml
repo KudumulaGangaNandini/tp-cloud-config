@@ -11,10 +11,12 @@ spring:
 
 dms:
   s3:
+    enabled : ${AWS_ENABLED}
     bucket: ${AWS_BUCKET_NAME}
     accessKey: ${AWS_ACCESS_KEY}
     secretKey: ${AWS_SECRET_KEY}
     region: ${AWS_REGION}
+    endpoint: ${AWS_ENDPOINT}
 
 
 keycloak:
