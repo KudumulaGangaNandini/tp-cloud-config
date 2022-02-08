@@ -16,7 +16,7 @@ dms:
     accessKey: ${AWS_ACCESS_KEY}
     secretKey: ${AWS_SECRET_KEY}
     region: ${AWS_REGION}
-    endpoint: https://augmnt.sgp1.digitaloceanspaces.com
+    endpoint: https://sgp1.digitaloceanspaces.com
 
 
 keycloak:
