@@ -18,7 +18,7 @@ springdoc:
 
 
 elasticsearch:
-  uri: ${ELASTIC_URI}
+  protocol: ${PROTOCOL}
   enable: true
   host: ${HOST}
   port: ${PORT}
