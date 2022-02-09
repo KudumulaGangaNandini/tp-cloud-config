@@ -1,0 +1,27 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 15MB
+      max-request-size: 15MB
+
+keycloak:
+  issuer-uri: ${KEYCLOAK_URL_AUTH}/auth/realms/
+
+default:
+  pagelimit: 5
+
+
+springdoc:
+  version: '@springdoc.version@'
+  api-docs:
+    path: /dms/v3/api-docs
+
+
+elasticsearch:
+  uri: ${ELASTIC_URI}
+  enable: true
+  host: ${HOST}
+  port: ${PORT}
+
+gateway:
+  uri: ${GATEWAY_URI}
