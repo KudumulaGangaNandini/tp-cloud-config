@@ -11,12 +11,19 @@ spring:
 
 dms:
   s3:
-    enabled : ${AWS_ENABLED}
+    enabled: ${AWS_ENABLED}
     bucket: ${AWS_BUCKET_NAME}
     accessKey: ${AWS_ACCESS_KEY}
     secretKey: ${AWS_SECRET_KEY}
     region: ${AWS_REGION}
-    endpoint: https://sgp1.digitaloceanspaces.com
+    endpoint: ${AWS_ENDPOINT}
+  digitalOcean:
+    enabled: ${DIGITAL_OCEAN_ENABLED}
+    bucket: ${DIGITAL_OCEAN_BUCKET_NAME}
+    accessKey: ${DIGITAL_OCEAN_ACCESSKEY}
+    secretKey: ${DIGITAL_OCEAN_SECRET_KEY}
+    region: ${DIGITAL_OCEAN_REGION}
+    endpoint: ${DIGITAL_OCEAN_ENDPOINT}
 
 
 keycloak:
