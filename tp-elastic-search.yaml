@@ -14,8 +14,7 @@ default:
 springdoc:
   version: '@springdoc.version@'
   api-docs:
-    path: /dms/v3/api-docs
-
+    path: /elasticsearch/v3/api-docs
 
 elasticsearch:
   protocol: ${PROTOCOL}
@@ -25,3 +24,12 @@ elasticsearch:
 
 gateway:
   uri: ${GATEWAY_URI}
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
