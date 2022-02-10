@@ -14,7 +14,7 @@ default:
 springdoc:
   version: '@springdoc.version@'
   api-docs:
-    path: /elasticsearch/v3/api-docs
+    path: /elastic/v3/api-docs
 
 elasticsearch:
   protocol: ${PROTOCOL}
