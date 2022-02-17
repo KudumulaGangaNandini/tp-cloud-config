@@ -16,3 +16,7 @@ springdoc:
   version: '@springdoc.version@'
   api-docs:
     path: /form-runtime/v3/api-docs
+
+elastic:
+  enable: ${elastic.enable}
+  source: ${elastic.source}
