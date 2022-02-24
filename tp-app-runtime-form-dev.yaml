@@ -20,3 +20,6 @@ springdoc:
 elastic:
   enable: ${ELASTIC_ENABLE}
   source: ${ELASTIC_SOURCE}
+
+default:
+  pagelimit: 20
