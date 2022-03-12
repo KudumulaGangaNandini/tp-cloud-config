@@ -1,0 +1,22 @@
+springdoc:
+  version: '@springdoc.version@'
+  api-docs:
+    path: /pcil-core/v3/api-docs
+
+opentracing:
+  spring:
+    cloud:
+      log:
+        enabled: true
+
+spring.data.mongodb.uri : ${PCIL_MONGO_URI}
+
+gateway:
+  uri: ${GATEWAY_URI}
+
+invoice:
+  username: ${USERNAME}
+  password: ${PASSWORD}
+  gstin: ${GSTIN}
+  client-code: ${CLIENTCODE}
+  url: ${STAGGING_URL}
