@@ -1,0 +1,21 @@
+spring:
+  data:
+    mongodb:
+      uri: ${PCIL_MONGO_URI}
+      
+springdoc:
+  version: '@springdoc.version@'
+  api-docs:
+    path: /pcil-erp-sync/v3/api-docs
+      
+keycloak:
+  issuer-uri: ${KEYCLOAK_URL_AUTH}/auth/realms/
+  
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
