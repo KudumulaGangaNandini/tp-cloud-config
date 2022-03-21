@@ -50,7 +50,7 @@ springdoc:
 
 elasticsearch:
   uri: http://localhost:8080
-  enable: false
+  enable: true
 
 
 logging:
