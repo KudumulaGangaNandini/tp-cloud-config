@@ -16,6 +16,10 @@ dms:
     accessKey: ${AWS_ACCESS_KEY}
     secretKey: ${AWS_SECRET_KEY}
     region: ${AWS_REGION}
+    s3File:
+      enabled: ${AWS_S3_ENABLED}
+      provider:
+        awsS3: ${AWS_PROVIDER}
 
   digitalOcean:
     enabled: ${DIGITAL_OCEAN_ENABLED}
@@ -24,7 +28,6 @@ dms:
     secretKey: ${DIGITAL_OCEAN_SECRET_KEY}
     region: ${DIGITAL_OCEAN_REGION}
     endpoint: ${DIGITAL_OCEAN_ENDPOINT}
-
 
 keycloak:
   issuer-uri: ${KEYCLOAK_URL_AUTH}/auth/realms/
