@@ -29,7 +29,6 @@ dms:
     region: ${DIGITAL_OCEAN_REGION}
     endpoint: ${DIGITAL_OCEAN_ENDPOINT}
 
-
 keycloak:
   issuer-uri: ${KEYCLOAK_URL_AUTH}/auth/realms/
 
