@@ -17,9 +17,9 @@ dms:
     secretKey: ${AWS_SECRET_KEY}
     region: ${AWS_REGION}
     s3File:
-      enabled: ${AWS_S3_ENABLED}
+      enabled: ${AWS_S3_ENABLED:true}
       provider:
-        awsS3: ${AWS_PROVIDER}
+        awsS3: ${AWS_PROVIDER:true}
 
   digitalOcean:
     enabled: ${DIGITAL_OCEAN_ENABLED}
