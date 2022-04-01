@@ -12,5 +12,8 @@ database:
   url: ${TP_MODELER_APP_MONGO_URI}
   name: techsophy-platform
 
+logo:
+  url: ${LOGO_URL:/opt/qrcode/logo.png}
+
 default:
   pagelimit: 20
