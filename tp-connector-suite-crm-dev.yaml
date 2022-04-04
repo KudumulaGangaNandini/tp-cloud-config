@@ -1,4 +1,10 @@
 
+springdoc:
+  version: '@springdoc.version@'
+  api-docs:
+    path: /crm/v3/api-docs
+
+
 gateway:
   uri: ${GATEWAY_URI}
 keycloak:
