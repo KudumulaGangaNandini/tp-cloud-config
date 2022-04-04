@@ -14,11 +14,5 @@ insta:
   customer_user_password: ${CUSTOME_USER_PASSWORD:techsophy123}
   insta_patients_vistit_url: ${INSTA_PATIENTS_VISIT_URL:https://api.instahealthsolutions.com/kims/Customer/Registration/GeneralRegistration.do}
 
-opentracing:
-  spring:
-    cloud:
-      log:
-        enabled: true
-
 springdoc:
   version: '@springdoc.version@'
