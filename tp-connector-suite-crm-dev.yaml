@@ -1,0 +1,28 @@
+
+gateway:
+  uri: ${GATEWAY_URI}
+keycloak:
+  issuer-uri: ${KEYCLOAK_URL_AUTH}/auth/realms/
+
+database:
+  url: ${TP_MODELER_APP_MONGO_URI}
+  name: techsophy-platform
+
+
+crm:
+  url: ${CRM_URL:https://crm.paisaplan.in/Api}
+  grant-type: ${CRM_GRANT_TYPE:client_credentials}
+  client-id: ${CRM_CLIENT_ID:79cd6088-7480-03ee-b4e5-61d9399bbdf5}
+  client-secret: ${CRM_LIENT_SECRET:sxp-crm}
+  db-enabled: ${DB_ENABLED:false}
+
+
+opentracing:
+  spring:
+    cloud:
+      log:
+        enabled: true
+
+default:
+  pagelimit: 20
+
