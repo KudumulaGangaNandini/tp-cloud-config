@@ -8,11 +8,10 @@ database:
   name: techsophy-platform
 
 insta:
-  insta_token_url: ${INSTA_TOKEN_URL:https://api.instahealthsolutions.com/kims/Customer/Login.do}
+  insta_url: ${INSTA_TOKEN_URL:https://api.instahealthsolutions.com/kims}
   hospital_name: ${INSTA_HOSTPITAL_NAME:kims}
   customer_user_id: ${INSTA_customer_USER:techsophy}
   customer_user_password: ${CUSTOME_USER_PASSWORD:techsophy123}
-  insta_patients_vistit_url: ${INSTA_PATIENTS_VISIT_URL:https://api.instahealthsolutions.com/kims/Customer/Registration/GeneralRegistration.do}
 
 springdoc:
   version: '@springdoc.version@'
