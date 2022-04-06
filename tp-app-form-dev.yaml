@@ -20,3 +20,7 @@ opentracing:
 
 default:
   pagelimit: 20
+
+mongock:
+  migration-scan-package:
+    - com.techsophy.tsf.form.config
