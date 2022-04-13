@@ -1,7 +1,7 @@
 spring:
   application:
     name: tp-connector-insta
-    package-location: {TEMP_FILE_LOCATION}
+    package-location: ${TEMP_FILE_LOCATION}
 
 gateway:
   uri:  ${GATEWAY_URI}
