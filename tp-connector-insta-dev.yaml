@@ -1,7 +1,13 @@
+spring:
+  application:
+    name: tp-connector-insta
+    package-location: {TEMP_FILE_LOCATION}
+
 gateway:
   uri:  ${GATEWAY_URI}
 keycloak:
   issuer-uri: ${KEYCLOAK_URL_AUTH}/auth/realms/
+
 
 database:
   url: ${TP_MODELER_APP_MONGO_URI}
