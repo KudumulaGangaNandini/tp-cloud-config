@@ -1,6 +1,9 @@
 spring:
   application:
     name: account-app
+  servlet:
+    multipart:
+      max-file-size: ${MAX_FILE_SIZE}
 
 keycloak:
   issuer-uri: ${KEYCLOAK_URL_AUTH}/auth/realms/
