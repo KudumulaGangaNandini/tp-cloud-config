@@ -22,6 +22,8 @@ user:
 default:
   pagelimit: 5
 
+clients: ${clients}
+
 gateway:
   uri: ${GATEWAY_URI}
 
