@@ -22,7 +22,7 @@ user:
 default:
   pagelimit: 5
 
-clients: ${clients}
+clients: ${CLIENTS}
 
 gateway:
   uri: ${GATEWAY_URI}
