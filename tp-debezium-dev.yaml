@@ -1,0 +1,33 @@
+gateway:
+  uri: ${GATEWAY_URI}
+
+database:
+  hostname: ${DB_HOSTNAME}
+  port: ${DB_PORT}
+  user: ${DB_USER}
+  password: ${DB_PASSWORD}
+  dbName: ${DB_NAME}
+
+  ## Logging properties
+logging:
+  file:
+    name: logs/techsophy-cdc-relay.log
+  level:
+    org:
+      springframework:
+        web: INFO
+  
+  ## Actuator config
+management:
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics
+  endpoint:
+    health:
+      show-details: always
+    metrics:
+      enabled: true
