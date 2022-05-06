@@ -11,6 +11,9 @@ database:
 offset:
   filePath: ${OFFSET_FILEPATH}
 
+table:
+  whitelist: ${WHITELIST:}
+
   ## Elasticsearch properties
 spring:
   elasticsearch:
