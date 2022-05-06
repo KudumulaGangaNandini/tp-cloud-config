@@ -8,10 +8,15 @@ database:
   password: ${DB_PASSWORD}
   dbName: ${DB_NAME}
 
-  ## Logging properties
+offset:
+  filePath: ${OFFSET_FILEPATH}
+
+  ## Elasticsearch properties
+spring:
+  elasticsearch:
+    uris: ${ELASTIC_URI}
+
 logging:
-  file:
-    name: logs/techsophy-cdc-relay.log
   level:
     org:
       springframework:
