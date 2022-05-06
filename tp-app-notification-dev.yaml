@@ -29,7 +29,6 @@ notification:
     access-key: ${SNS_ACCESS_KEY}
     secret-key: ${SNS_SECRET_KEY}
     region: ${SNS_REGION}
-    arn: ${SNS_TOPIC_ARN}
   db:
     provider:
       mongodb:
