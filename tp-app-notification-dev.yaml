@@ -115,6 +115,11 @@ database:
 gateway:
   uri: ${GATEWAY_URI}
 
+springdoc:
+  version: '@springdoc.version@'
+  api-docs:
+    path: /notification/v3/api-docs
+
 keycloak:
   issuer-uri: ${KEYCLOAK_URL_AUTH}/auth/realms/
 
