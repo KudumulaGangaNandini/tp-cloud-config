@@ -11,6 +11,9 @@ database:
 offset:
   filePath: ${OFFSET_FILEPATH}
 
+slot:
+  name: ${SLOT}
+
 table:
   whitelist: ${WHITELIST:}
 
