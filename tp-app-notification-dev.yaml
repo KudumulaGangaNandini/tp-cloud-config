@@ -38,8 +38,8 @@ notification:
   sms:
     enabled: ${SMS_ENABLED:true}
     provider:
-      twilio: ${SMS_PROVIDER_TWILIO:false}
-      aws: ${SMS_PROVIDER_AWS:true}
+      twilio: ${SMS_PROVIDER_TWILIO:true}
+      aws: ${SMS_PROVIDER_AWS:false}
   email:
     enabled: ${EMAIL_ENABLED:true}
     provider:
