@@ -47,9 +47,9 @@ notification:
       sendGrid: ${EMAIL_PROVIDER_SENDGRID:false}
       awsSES: ${EMAIL_PROVIDER_AWS_SES:false}
   push-notification:
-    enabled: ${FIREBASE_ENABLED:true}
+    enabled: ${FIREBASE_ENABLED}
     provider:
-      firebase: ${FIREBASE_APP:true}
+      firebase: ${FIREBASE_APP}
 
   firebase:
     project_id: creed-giving-21712
