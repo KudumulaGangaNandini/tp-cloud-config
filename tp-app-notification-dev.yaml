@@ -52,40 +52,13 @@ notification:
       firebase: ${FIREBASE_APP}
 
   firebase:
-    project_id: creed-giving-21712
-    private_key_id: 3b7288069d98e9866beaea4c1de5c0d6b49cf71c
+    project_id: ${FIREBASE_PROJECT_ID}
+    private_key_id: ${FIREBASE_PRIVATE_KEY_ID}
     private_key: |
-      -----BEGIN PRIVATE KEY-----
-      MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCMyEfMlPtS/aaA
-      /mk2hzZtsFPyifzqEp6+EXiU/E8B4TtW01YpcJnX0u1DebEYCgtg5dqyreb9vwcS
-      uMM/Fc8EtjxKsl32EC8MzRYSX1yq60OdXViFMma9P7rBMxlGuzN90tvhphGdJfqv
-      gUqvSXTquTZQ7cGq5y0Pe8IwriYc+oNxQ3Q4OqI5V2xHFhPXBUiA7rK1GOHHOBcy
-      UUMovLACJOtmruAkEooL0izPf0SKi8OxagdZRIXGwwNw5y3Zu0ZpedY8reUGsry4
-      gfkku88uaOL6oPAtyeXhmJtLCI0NjMLRDrSjavZlqnyjHJf174VCFLdwSy0ccDRT
-      +nRqDFV9AgMBAAECggEAAJ1+cWabICCcbDI+IhqwqTxoRqY8gas2hOAvmRrKKJj6
-      6PCLjwZNDTw3e7ccLItl1dTjT70UvQM0X3VST60oCvmxUvirW4S9g+VFHD5fOcL8
-      OB8BsyFPgUTa2RuAvIY2r/+J284LOuAcbyhoO9KmP2XqBGLgdFGz8gdXLDnJdKMH
-      Pn9bNE4cXpYFc4uaYCfLt+8F1BEjN785DGT8L5a9kJZZ02NuI5mey9k1XADZ1TpN
-      9nNpPEFlcnDCnu0+u9ziIU4Wk1vvAFpU+b80XJ77NQzXVX6ojjVjhBOwXDWChJIV
-      Ome1y4jXNNkZIgBYOQx2ue+YFym/MouqEXw+sy6ZYQKBgQDCVmKqET20ahg7DsVF
-      j/l/E4XUW7eKrHHTs0IYHOzeYzy4L/0TRNLwJCMv6j8BysXl64LHXLTzAN/X1XMl
-      +Ch4ypyqgTw9i2MBtdqkk+ye1j1b7alWbZrNaWqcS62hq8V2oBhY5rEtWRCy+LSS
-      6wHz+2ItbVqqO3KgPu6HIKm63QKBgQC5c7qmw4SUDep2yX15erSuwdMyfCTon1hG
-      timPu5aZ4BuUdttXTNX2AJSHSgHeHh0avlKKURsoCWnNvh137zI0+3jwl4VhYCIi
-      8unkD6gbiJ6fPHooULj/uhyOz7Z3fTUCZKu7c17PO8SNJOtpKBFM20YBVnBdVHzz
-      LaKy5hbLIQKBgBUf9tGt1htKfR/OVztcjy51HNMctTLp0+XDUqf0XPs/plYPQV9a
-      1+Mqynhm6jpzpFd95lVtim3v5mU72qyB8URQIf+W1MmL4VNKRV4mhk4t07Wue/3d
-      JDq3/tLGlzU/ytM+S+c+DHx1dg8+YcKmsSuoY9+0R2rB04//x0YBEvIxAoGAbOQQ
-      F7U71ncpUaBTpY2wI+C5Mq6EOXa+rZ5uXvAFqMpXR2BWwDbkdvK2Q43n9NT3v+k6
-      q+6dpG+KiXz07qQrdcKmq5Y8ggWhZaX+QaQT0D7y7IrlK2Dij31nIU/DUvvYsVQN
-      Jh7C76mnajzgYTlelyM1QrnPdm2ShHMqUiMaBSECgYAIbCXDj/KJLb0XgqUfoCGa
-      vAbzJfFgkT8txqwywc/hGwl1ux2HXtNCXZvI6IrZ8OqOVOydnaSHWcV1EWZRon0y
-      DGeNw47UM/8nPq//27xuYy8SftcNMBrv8VokJjNxNyeDrIhS2JSyUiMuj/K7f7G0
-      rnkQECXKNMpOcKrZOkmYMw==
-      -----END PRIVATE KEY-----
-    client_email: firebase-adminsdk-unyq5@creed-giving-21712.iam.gserviceaccount.com
-    client_id : 107847440121855273268
-    token_uri: https://oauth2.googleapis.com/token
+      ${FIREBASE_PRIVATE_KEY}
+    client_email: ${FIREBASE_CLIENT_EMAIL}
+    client_id : ${FIREBASE_CLIENT_ID}
+    token_uri: ${FIREBASE_TOKEN_URI}
   smtp:
     host: ${SMTP_HOST}
     port: ${SMTP_PORT}
