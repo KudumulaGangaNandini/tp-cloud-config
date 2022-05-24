@@ -5,7 +5,7 @@ beconnector:
           - ${GATEWAY_URI}/workflow/v1
 
 sxp:
-  journeyTriggerBaseURL: https://sxp-playground.journey-manager.techsophy.com/journey/
+  journeyTriggerBaseURL: http://sxp.k8s.techsophy.com/sxp/journey/
   contextEngineURL: ${CE_DYN_JOURNEY_URL}
 
 springdoc:
