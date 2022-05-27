@@ -35,6 +35,7 @@ springdoc:
 email:
   validity: ${EMAIL_VALIDITY:86400}
 otp:
+  length: ${OTP_LENGTH:6}
   validity: ${OTP_VALIDITY:180}
 USER:
   REGISTRATION:
