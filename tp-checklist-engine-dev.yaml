@@ -1,5 +1,6 @@
 keycloak:
   issuer-uri: ${KEYCLOAK_URL_AUTH}/auth/realms/
+  uri: ${KEYCLOAK_URL_AUTH}
 springdoc:
   version: '@springdoc.version@'
   api-docs:
