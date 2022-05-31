@@ -6,6 +6,10 @@ springdoc:
     path: /checklist-engine/v3/api-docs
 gateway:
   uri: ${GATEWAY_URI}
+  
+elasticsearch:
+  enable: true
+
 database:
   url: ${TP_MODELER_APP_MONGO_URI}
   name: techsophy-platform
