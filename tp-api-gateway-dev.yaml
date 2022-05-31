@@ -162,6 +162,11 @@ spring:
             - Path=/api/checklist-modeler/**
           filters:
             - StripPrefix=1
+        - id: template-runtime-service
+          uri: http://template-runtime:8080
+          predicates:
+            - Path=/api/template-runtime/**
+
 
 
   security:
