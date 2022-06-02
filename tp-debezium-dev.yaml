@@ -1,3 +1,8 @@
+springdoc:
+  version: '@springdoc.version@'
+  api-docs:
+    path: /debezium/v3/api-docs
+
 gateway:
   uri: ${GATEWAY_URI}
 

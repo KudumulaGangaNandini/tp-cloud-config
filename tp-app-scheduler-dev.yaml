@@ -12,7 +12,7 @@ keycloak:
 springdoc:
   version: '@springdoc.version@'
   api-docs:
-    path: scheduler/v3/api-docs
+    path: /scheduler/v3/api-docs
 
 
 gateway:
