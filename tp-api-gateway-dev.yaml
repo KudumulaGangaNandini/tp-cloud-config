@@ -1,13 +1,13 @@
 keycloak:
-  issuer-uri: ${KEYCLOAK_URL_AUTH}/auth/realms/
-  realm.name: ${KEYCLOAK_REALM_NAME}
-  client.id: ${KEYCLOAK_CLIENT_ID}
-  client.secret: ${KEYCLOAK_CLIENT_SECRET}
+  issuer-uri: ${KEYCLOAK_URL_AUTH:https://keycloak-tsplatform.techsophy.com}/auth/realms/
+  realm.name: ${KEYCLOAK_REALM_NAME:techsophy-platform}
+  # Keycloak Camunda Identity Client
+  client.id: ${KEYCLOAK_CLIENT_ID:camunda-identity-service}
+  client.secret: ${KEYCLOAK_CLIENT_SECRET:0ef502e1-567a-48cf-ae56-7e1a5bdfe3c4}
 
 
 springdoc:
   version: '@springdoc.version@'
-
 
 spring:
   application:
@@ -27,7 +27,7 @@ spring:
           filters:
             - RemoveRequestHeader=Cookie
             - StripPrefix=1
-        - id: process-modeler-service
+        - id: workflow-modeler-service
           uri: http://workflow-app:8080
           predicates:
             - Path=/api/process-modeler/**
@@ -62,7 +62,7 @@ spring:
           filters:
             - RemoveRequestHeader=Cookie
             - StripPrefix=1
-        - id: rule-engine-service
+        - id: rules-service
           uri: http://rules:8080
           predicates:
             - Path=/api/rules/**
@@ -89,7 +89,7 @@ spring:
             - Path=/api/auth/**
           filters:
             - StripPrefix=1
-        - id: ux-controller-service
+        - id: workflow-service
           uri: http://uxapp-controller:8080
           predicates:
             - Path=/api/workflow/**
@@ -137,7 +137,7 @@ spring:
             - Path=/api/deployment/**
           filters:
             - StripPrefix=1
-        - id: dms-app
+        - id: dms-service
           uri: http://dms-app:8080
           predicates:
             - Path=/api/dms/**
@@ -151,7 +151,7 @@ spring:
             - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
             - RewritePath=/v3/api-docs/(?<path>.*), /api/$\{path}/v3/api-docs
         - id: config-server
-          uri: http://cloud-config-server:8080
+          uri:  http://cloud-config-server:8080
           predicates:
             - Path=/api/config-server/**
           filters:
@@ -162,12 +162,102 @@ spring:
             - Path=/api/checklist-modeler/**
           filters:
             - StripPrefix=1
-        - id: template-runtime-service
-          uri: http://template-runtime:8080
+        - id: checklist-engine-service
+          uri: http://checklist-engine:8080
           predicates:
-            - Path=/api/template-runtime/**
-
-
+            - Path=/api/checklist-engine/**
+          filters:
+            - StripPrefix=1
+        - id: pci-service
+          uri: http://pci-app:8080
+          predicates:
+            - Path=/api/pci/**
+          filters:
+            - StripPrefix=1
+        - id: scheduler-app-service
+          uri: http://scheduler-app:8080
+          predicates:
+            - Path=/api/scheduler/**
+          filters:
+            - StripPrefix=1
+        - id: escalation-matrix-modeler-service
+          uri: http://escalation-matrix-app:8080
+          predicates:
+            - Path=/api/escalation-matrix-modeler/**,/api/dynamic-steps-modeler/**
+          filters:
+            - StripPrefix=1
+        - id: escalation-matrix-runtime-service
+          uri: http://runtime-escalation-matrix:8080
+          predicates:
+            - Path=/api/escalation-matrix-runtime/**,/api/dynamic-steps-runtime/**
+          filters:
+            - StripPrefix=1de
+        - id: payment-gateway-service
+          uri: http://payment-gateway:8080
+          predicates:
+            - Path=/api/payment-gateway/**
+          filters:
+            - StripPrefix=1
+        - id: tp-elastic-search-app-service
+          uri: http://tp-elastic-search-app:8080
+          predicates:
+            - Path=/api/elastic/**
+          filters:
+            - StripPrefix=1
+        - id: util-service
+          uri: http://util-app:8080
+          predicates:
+            - Path=/api/util/**
+          filters:
+            - StripPrefix=1
+        - id: pcil-core-service
+          uri: http://pcil-core:8080
+          predicates:
+            - Path=/api/pcil-core/**
+          filters:
+            - StripPrefix=1
+        - id: pcil-erp-sync-service
+          uri: http://pcil-erp-sync:8080
+          predicates:
+            - Path=/api/pcil-erp-sync/**
+          filters:
+            - StripPrefix=1
+        - id: connector-suite-crm-service
+          uri: http://connector-suite-crm:8080
+          predicates:
+            - Path=/api/crm/**
+          filters:
+            - StripPrefix=1
+        - id: connector-insta-service
+          uri: http://connector-insta:8080
+          predicates:
+            - Path=/api/insta/**
+          filters:
+            - StripPrefix=1
+        - id: debezium-service
+          uri: http://debezium:8080
+          predicates:
+            - Path=/api/debezium/**
+          filters:
+            - StripPrefix=1
+        - id: hello-python-start-service
+          uri: http://hello-python-service:5000
+          predicates:
+            - Path=/api/start/**
+          filters:
+            - StripPrefix=1
+        - id: hello-python-stop-service
+          uri: http://hello-python-service:5000
+          predicates:
+            - Path=/api/stop/**
+          filters:
+            - StripPrefix=1
+        - id: runtime-template-service
+          uri: http://runtime-template:8080
+          predicates:
+            - Path=/api/runtime-template/**
+          filters:
+            - StripPrefix=1
 
   security:
     oauth2:
@@ -199,3 +289,9 @@ logging.level:
   org.springframework.web.reactive.function.client: TRACE
 
 logging.pattern.console: "%d{HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+
+security:
+  disabled:
+    baseUrl:
+      - /**/config-server/**
+

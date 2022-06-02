@@ -1,7 +1,7 @@
 springdoc:
   version: '@springdoc.version@'
   api-docs:
-    path: /template-runtime/v3/api-docs
+    path: /runtime-template/v3/api-docs
 
 
 gateway:

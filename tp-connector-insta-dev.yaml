@@ -22,7 +22,7 @@ insta:
 springdoc:
   version: '@springdoc.version@'
   api-docs:
-    path: /connector-insta/v3/api-docs
+    path: /insta/v3/api-docs
 
 management:
   health:
