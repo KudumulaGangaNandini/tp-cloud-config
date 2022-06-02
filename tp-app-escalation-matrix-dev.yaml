@@ -1,7 +1,7 @@
 springdoc:
   version: '@springdoc.version@'
   api-docs:
-    path: /escalation/v3/api-docs
+    path: /escalation-matrix-modeler/v3/api-docs
 
 gateway:
   uri: ${GATEWAY_URI}
