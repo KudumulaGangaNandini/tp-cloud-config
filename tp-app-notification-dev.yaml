@@ -63,7 +63,7 @@ notification:
     host: ${SMTP_HOST}
     port: ${SMTP_PORT}
     user: ${SMTP_USER:noreply.tsf@gmail.com}
-    password: rvkwuqgzwplumptl
+    password: ${SMTP_PASSWORD}
     debug: false
   templates:
     enabled: ${TEMPLATES_ENABLED}
