@@ -8,6 +8,9 @@ spring:
 
 gateway:
   uri: ${GATEWAY_URI}
+  
+keycloak:
+  issuer-uri: ${KEYCLOAK_URL_AUTH}/auth/realms/
 
 camunda-engine.servlet.context-path : ${CAMUNDA_ENGINE_CONTEXT_PATH}
 
