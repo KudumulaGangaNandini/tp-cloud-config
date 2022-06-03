@@ -1,6 +1,9 @@
 spring:
   application:
     name: tp-app-notification
+  devtools:
+    livereload:
+      enabled: false
   servlet:
     multipart:
       max-file-size: 15MB
