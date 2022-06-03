@@ -62,7 +62,7 @@ notification:
   smtp:
     host: ${SMTP_HOST}
     port: ${SMTP_PORT}
-    user: ${SMTP_USER:noreply.tsf@gmail.com}
+    user: ${SMTP_USER}
     password: ${SMTP_PASSWORD}
     debug: false
   templates:
