@@ -25,9 +25,9 @@ voyager:
 
 notification:
   aws:
-    region: ${AWS_REGION}
-    access-key: ${AWS_ACCESS_KEY}
-    access-secret: ${AWS_ACCESS_SECRET}
+    region: ${SES_AWS_REGION}
+    access-key: ${SES_AWS_ACCESS_KEY}
+    access-secret: ${SES_AWS_ACCESS_SECRET}
   sns:
     access-key: ${SNS_ACCESS_KEY}
     secret-key: ${SNS_SECRET_KEY}
