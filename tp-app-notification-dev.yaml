@@ -46,9 +46,9 @@ notification:
   email:
     enabled: ${EMAIL_ENABLED:true}
     provider:
-      sendMail: ${EMAIL_PROVIDER_SENDMAIL}
-      sendGrid: ${EMAIL_PROVIDER_SENDGRID}
-      awsSES: ${EMAIL_PROVIDER_AWS_SES}
+      sendMail: ${EMAIL_PROVIDER_SENDMAIL:false}
+      sendGrid: ${EMAIL_PROVIDER_SENDGRID:false}
+      awsSES: ${EMAIL_PROVIDER_AWS_SES:true}
   push-notification:
     enabled: ${FIREBASE_ENABLED}
     provider:
