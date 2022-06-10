@@ -11,6 +11,7 @@ camunda.bpm:
   generic-properties:
     properties:
       generalResourceWhitelistPattern: "[a-zA-Z0-9+]+|camunda-admin"
+      userResourceWhitelistPattern: "[a-zA-Z0-9+]+|camunda-admin"
   authorization:
     enabled: true
   filter:
