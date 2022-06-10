@@ -10,8 +10,7 @@ gateway:
 camunda.bpm:
   generic-properties:
     properties:
-      generalResourceWhitelistPattern: "+"
-      userResourceWhitelistPattern: "+"
+      generalResourceWhitelistPattern: "[a-zA-Z0-9+]+|camunda-admin"
   authorization:
     enabled: true
   filter:
