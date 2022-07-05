@@ -11,9 +11,9 @@ springdoc:
 database:
   url: ${TP_MODELER_APP_MONGO_URI}
   name: techsophy-platform
-
 logo:
   url: ${LOGO_URL:/opt/qrcode/logo.png}
+  display: ${LOGO_DISPLAY:false}
 
 default:
   pagelimit: 20
