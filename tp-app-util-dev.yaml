@@ -1,3 +1,6 @@
+webclient:
+  buffer-size: ${WEBCLIENT_BUFFER_SIZE:10485760}
+
 keycloak:
   issuer-uri: ${KEYCLOAK_URL_AUTH}/auth/realms/
 
