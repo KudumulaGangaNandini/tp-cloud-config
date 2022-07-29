@@ -7,7 +7,7 @@ keycloak:
   realm: ${keycloak.realm.name}
   resource: ${keycloak.client.id}
   credentials:
-    secret: ${keycloak.client.secret}
+    secret: ${keycloak.client.secret:your-client-secret}
 
 springdoc:
   version: '@springdoc.version@'
@@ -43,9 +43,9 @@ resilience4j:
         registerHealthIndicator: true
         evenrConsumerBufferSize: 10
         failureRateThreshold: 50
-        minimumNumberOfCalls: 5
+        minimumNumberOfCalls: 3
         automaticTransitionFromOpenToHalfOpenEnabled: true
-        waitDurationInOpenState: 5s
+        waitDurationInOpenState: 3s
         permittedNumberOfCallsInHalfOpenState: 3
         slidingWindowSize: 10
         slidingWindowType: COUNT_BASED

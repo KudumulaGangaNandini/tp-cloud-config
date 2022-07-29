@@ -18,8 +18,8 @@ database:
 crm:
   url: ${CRM_URL:https://crm.paisaplan.in/Api}
   grant-type: ${CRM_GRANT_TYPE:client_credentials}
-  client-id: ${CRM_CLIENT_ID:79cd6088-7480-03ee-b4e5-61d9399bbdf5}
-  client-secret: ${CRM_LIENT_SECRET:sxp-crm}
+  client-id: ${CRM_CLIENT_ID:your-client-id}
+  client-secret: ${CRM_LIENT_SECRET:your-client-secret}
   db-enabled: ${DB_ENABLED:false}
 
 
@@ -51,9 +51,9 @@ resilience4j:
         registerHealthIndicator: true
         evenrConsumerBufferSize: 10
         failureRateThreshold: 50
-        minimumNumberOfCalls: 5
+        minimumNumberOfCalls: 3
         automaticTransitionFromOpenToHalfOpenEnabled: true
-        waitDurationInOpenState: 5s
+        waitDurationInOpenState: 3s
         permittedNumberOfCallsInHalfOpenState: 3
         slidingWindowSize: 10
         slidingWindowType: COUNT_BASED
