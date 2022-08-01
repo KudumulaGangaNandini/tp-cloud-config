@@ -7,7 +7,7 @@ keycloak:
   realm: ${keycloak.realm.name}
   resource: ${keycloak.client.id}
   credentials:
-    secret: ${keycloak.client.secret:your-client-secret}
+    secret: ${keycloak.client.secret}
 
 springdoc:
   version: '@springdoc.version@'

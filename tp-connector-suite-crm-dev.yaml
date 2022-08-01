@@ -18,8 +18,8 @@ database:
 crm:
   url: ${CRM_URL:https://crm.paisaplan.in/Api}
   grant-type: ${CRM_GRANT_TYPE:client_credentials}
-  client-id: ${CRM_CLIENT_ID:your-client-id}
-  client-secret: ${CRM_LIENT_SECRET:your-client-secret}
+  client-id: ${CRM_CLIENT_ID}
+  client-secret: ${CRM_LIENT_SECRET}
   db-enabled: ${DB_ENABLED:false}
 
 
